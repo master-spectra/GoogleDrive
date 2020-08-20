@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+	<link rel="stylesheet" href="less/style.css">
+	<title>Document</title>
+</head>
+<body>
+	<div class="page">
+		<div class="overlay"></div>
+		<div class="header">
+			<div class="logo">
+				<img src="https://www.gstatic.com/images/branding/product/1x/drive_48dp.png" alt="">
+				<a href="">Диск</a>
+			</div>
+			<form action="post">
+				<input type="search" placeholder="Поиск на Диске">
+			</form>
+			<div class="menu">
+				<button class="btn-menu"><span class="icon far fa-check-circle"></span></button>
+				<button class="btn-menu"><span class="icon far fa-question-circle"></span></button>
+				<button class="btn-menu"><span class="icon fas fa-cog"></span></button>
+				<button class="btn-menu"><span class="icon fas fa-bars"></span></button>
+				<div class="offline-mode">
+					<form action="">
+						<span>Просмотр оффлайн версии</span>
+						<input type="checkbox">
+					</form>
+				</div>
+				<div class="help-list">
+					<a href="https://support.google.com/chrome/?p=help&ctx=keyboard#topic=9796470"><button class="help-list-btn">Справка</button></a>
+					<a href="https://support.google.com/chrome/?p=help&ctx=keyboard#topic=9796470"><button class="help-list-btn">Обучение</button></a>
+					<a href="https://support.google.com/chrome/?p=help&ctx=keyboard#topic=9796470"><button class="help-list-btn">Обновление</button></a>
+					<a href="https://support.google.com/chrome/?p=help&ctx=keyboard#topic=9796470"><button class="help-list-btn">Условия и правила</button></a>
+					<a href="https://support.google.com/chrome/?p=help&ctx=keyboard#topic=9796470"><button class="help-list-btn">Оставить отзыв</button></a>
+				</div>
+				<div class="setting-list">
+					<button class="setting-list-btn">Настройки</button>
+					<button class="setting-list-btn">Горячие клавиши</button>
+				</div>
+				<div class="modal-window-setting">
+					<div class="header-modal-window-setting">
+						<h2 class="title">Настройки</h2>
+						<button class="ready-btn">Готово</button>
+					</div>
+					<div class="content-modal-window">
+						<div class="side-bar-modal-window">
+							<button class="tab-btn">Общие</button>
+							<button class="tab-btn">Уведомления</button>
+							<button class="tab-btn">Управления приложениями</button>
+						</div>
+						<div class="list-setting-modal-window">
+							<div class="space">
+								<h2 class="title-setting">Хранилище</h2>
+								<span class="use-space">Использовано 10 из 15 ГБ</span>
+								<div class="more-opportunities">
+									<a href="">Купить больше места</a>
+									<a href="">Объекты занимающии место в хранилище</a>
+								</div>
+							</div>
+							<div class="download-file">
+								<h2 class="title-setting">Загруженные файлы</h2>
+								<form action="">
+									<input type="checkbox">
+									<span>Преобразовывать загруженные файлы в формат Google </span>
+								</form>
+							</div>
+							<div class="languages">
+								<h2 class="title-setting">Языки</h2>
+								<a href="">Языковые настройки</a>
+							</div>
+							<div class="offline-access">
+								<h2 class="title-setting">Офлайн-доступ</h2>
+								<form action="">
+									<input type="checkbox">
+									<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad voluptatem vitae deleniti ullam facilis veniam quis, ab velit perferendis exercitationem!</span>
+								</form>
+							</div>
+							<div class="interface">
+								<h2 class="title-setting">Интерфейс</h2>
+								<select name="" id="" value="">
+									<option value="">Просторный</option>
+									<option value="">Обычный</option>
+									<option value="">Компактный</option>
+								</select>
+							</div>
+							<div class="hints">
+								<h2 class="title-setting">Рекомендации и подсказки</h2>
+								<form action="post">
+									<input type="checkbox">
+									<span>Включить быстрый доступ для важных файлов</span>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-window-hot-key">
+					<div class="header-modal-window-hot-key">
+						<h2 class="title-modal-window-hot-key">Быстрые клавиши</h2>
+						<form action="post">
+							<input type="search" placeholder="Поиск быстрых клавиш">
+						</form>
+						<button class="close-window"><span class="fas fa-times"></span></button>
+					</div>
+					<div class="content-modal-window-hot-key">
+						<aside class="left-bar-modal-window-hot-key">
+							<a href="#saved">Выделение</a>
+							<a href="#navigations">Навигация</a>
+							<a href="#app">Приложения</a>
+							<a href="#create">Создать</a>
+							<a href="#download">Загрузка</a>
+							<a href="#menu-modal-window">Меню</a>
+							<a href="#do">Действия</a>
+						</aside>
+						<div class="list-hot-key">
+							<div class="saved" id="saved">
+								<h2 class="title">Выделенные</h2>									
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div><div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div><div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+							</div>
+							<div class="navigations" id="navigations">
+								<h2 class="title">Навигация</h2>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+							</div>
+							<div class="app" id="app">
+								<h2 class="title">Приложения</h2>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+							</div>
+							<div class="create" id="create">
+								<h2 class="title">Создать</h2>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+							</div>
+							<div class="download" id="download">
+								<h2 class="title">Загрузка</h2>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+							</div>
+							<div class="menu-modal-window" id="menu">
+								<h2 class="title">Меню</h2>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+							</div>
+							<div class="do" id="do">
+								<h2 class="title">Действия</h2>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+								<div class="hot-key">
+									<h2 class="properties-hot-key">Выбрать объект с низу</h2>
+									<span>j или ↓</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="apps">
+					<a href=""><img src="img/avatar.jpg" alt="">Account</a>
+					<a href=""><img src="https://cdn.svgporn.com/logos/google-icon.svg" alt="">Google</a>
+					<a href=""><img src="img/maps.png" alt="">Maps</a>
+					<a href=""><img src="https://cdn.svgporn.com/logos/youtube.svg" alt="">Youtube</a>
+					<a href=""><img src="https://cdn.svgporn.com/logos/google-play-icon.svg" alt="">Play</a>
+					<a href=""><img src="https://cdn.svgporn.com/logos/google-gmail.svg" alt="">gmail</a>
+					<a href=""><img src="https://www.gstatic.com/images/branding/product/1x/drive_48dp.png" alt="">Drive</a>
+					<a href=""><img src="https://cdn.svgporn.com/logos/google-calendar.svg" alt="">Celendar</a>
+					<a href=""><img src="https://cdn.svgporn.com/logos/google-plus.svg" alt="">Google+</a>
+				</div>
+				<div class="account">
+					<img src="img/avatar.jpg" alt="" class="mini-avatar-account">
+					<div class="full-account-info">
+						<img src="img/avatar.jpg" alt="">
+						<h2 class="name-user">Andrey Omelchenko</h2>
+						<p class="email-user">sonyc4755@gmail.com</p>
+						<button class="control-account-btn">Управлеление аккаунтом Google</button>
+						<div class="other">
+							<div class="overlay-btn">
+								<button class="add-new-account other-btn">Добавить ещё один аккаунт</button>
+							</div>
+							<button class="exit other-btn">Выйти</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content-page">
+			<aside class="left-bar">
+				<button class="btn-create-file"><span class="fas fa-plus"></span> Создать</button>
+				<div class="side-bar-menu">
+					<a href=""><span class="fas fa-book"></span> Мой диск</a>
+					<a href=""><span class="fas fa-laptop"></span> Компьтеры</a>
+					<a href=""><span class="fas fa-user-friends"></span> Доступные мне</a>
+					<a href=""><span class="far fa-clock"></span> Недавние</a>
+					<a href=""><span class="far fa-star"></span> Помеченные</a>
+					<a href=""><span class="far fa-trash-alt"></span> Корзина</a>
+				</div>
+				<div class="free-space-on-drive">
+					<span class="fas fa-server"></span>
+					<span>Хранилище заполнено на</span>
+					<p>Использовано 10 из 15 ГБ</p>
+					<a href="">Купить больше места</a>
+				</div>
+			</aside>
+			<div class="centeral-content">
+				<div class="header-central-content">
+					<h2 class="title">Мой диск</h2>
+					<span class="fas fa-info"></span>
+					<span class="fas fa-list-ul"></span>
+				</div>
+			</div>
+			<aside class="right-bar">
+				<img src="img/calendary.png" alt="">
+				<img src="img/youtube.png" alt="">
+				<img src="img/gmail.png" alt="">
+				<button class="add-task-button fas fa-plus"></button>
+				<button class="close-open-right-bar-btn"><span class="fas fa-arrow-left"></span></button>
+			</aside>
+		</div>
+	</div>
+	<script src="js/main.js"></script>
+</body>
+</html>
