@@ -200,6 +200,12 @@ openVideoBtn.addEventListener('click', function() {
 		for(let i =  0; i < 1; i++) {
 			youtubeVideo.style.display = "block";
 			overlay.style.display = "block";
+			fullAccountInfo.style.display = "none";
+			apps.style.display = "none";
+			settingList.style.display = "none";
+			helpList.style.display = "none";
+			downListBtn.style.display = "none";
+			offlineMode.style.display = "none";
 		}
 	} 
 });
