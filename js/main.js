@@ -23,6 +23,7 @@ let
 	createFolder		= document.querySelector('.create-folder'),
 	inputName 			= document.querySelector('.input-name'),
 	btnFormNewFolder 	= document.querySelector('.btn-form-new-folder'),
+	closeModalWindow	= document.querySelector('.close-window-new-folder'),
 	file 				= document.querySelector('.file'),
 
 	folder,
@@ -36,6 +37,7 @@ miniAccount.addEventListener('click', function() {
 			apps.style.display = "none";
 			settingList.style.display = "none";
 			helpList.style.display = "none";
+			downListBtn.style.display = "none";
 		};
 	} else if (getComputedStyle(fullAccountInfo).display != 'none') {
 		for (let i = 0; i < 1; i++) {
@@ -43,6 +45,7 @@ miniAccount.addEventListener('click', function() {
 			apps.style.display = "none";
 			settingList.style.display = "none";
 			helpList.style.display = "none";
+			downListBtn.style.display = "none";
 		};
 	}
 });
@@ -54,12 +57,14 @@ buttonMenu[3].addEventListener('click', function() {
 			fullAccountInfo.style.display = "none";
 			settingList.style.display = "none";
 			offlineMode.style.display = "none";
+			downListBtn.style.display = "none";
 			helpList.style.display = "none";
 		};
 	} else if (getComputedStyle(apps).display != 'none') {
 		for (let i = 0; i < 1; i++) {
 			fullAccountInfo.style.display = "none";
 			apps.style.display = "none";
+			downListBtn.style.display = "none";
 			settingList.style.display = "none";
 			offlineMode.style.display = "none";
 			helpList.style.display = "none";
@@ -73,6 +78,7 @@ buttonMenu[2].addEventListener('click', function() {
 			settingList.style.display = "block";
 			fullAccountInfo.style.display = "none";
 			apps.style.display = "none";
+			downListBtn.style.display = "none";
 			helpList.style.display = "none";
 			offlineMode.style.display = "none";
 		};
@@ -82,6 +88,7 @@ buttonMenu[2].addEventListener('click', function() {
 			apps.style.display = "none";
 			settingList.style.display = "none";
 			offlineMode.style.display = "none";
+			downListBtn.style.display = "none";
 			helpList.style.display = "none";
 		};
 	}
@@ -95,11 +102,13 @@ buttonMenu[1].addEventListener('click', function() {
 			offlineMode.style.display = "none";
 			apps.style.display = "none";
 			settingList.style.display = "none";
+			downListBtn.style.display = "none";
 		};
 	} else if (getComputedStyle(helpList).display != 'none') {
 		for (let i = 0; i < 1; i++) {
 			fullAccountInfo.style.display = "none";
 			offlineMode.style.display = "none";
+			downListBtn.style.display = "none";
 			apps.style.display = "none";
 			settingList.style.display = "none";
 			helpList.style.display = "none";
@@ -115,6 +124,7 @@ buttonMenu[0].addEventListener('click', function() {
 			fullAccountInfo.style.display = "none";
 			apps.style.display = "none";
 			settingList.style.display = "none";
+			downListBtn.style.display = "none";
 		};
 	} else if (getComputedStyle(offlineMode).display != 'none') {
 		for (let i = 0; i < 1; i++) {
@@ -123,6 +133,7 @@ buttonMenu[0].addEventListener('click', function() {
 			fullAccountInfo.style.display = "none";
 			apps.style.display = "none";
 			settingList.style.display = "none";
+			downListBtn.style.display = "none";
 		};
 	}
 });
@@ -190,12 +201,17 @@ openVideoBtn.addEventListener('click', function() {
 	} 
 });
 
-openVideoBtn.addEventListener('keydown', function() {
+window.addEventListener('keydown', function() {
 	for  (let i = 0; i < 1; i++) {
 		if (getComputedStyle(youtubeVideo).display != "none") {
 			for(let i =  0; i < 1; i++) {
 				youtubeVideo.style.display = "none";
 				overlay.style.display = "none";
+				modalWindowHotKey.style.display = "none";
+				fullAccountInfo.style.display = "none";
+				apps.style.display = "none";
+				settingList.style.display = "none";
+				helpList.style.display = "none";
 			}
 		} 
 	}
@@ -238,7 +254,13 @@ createFolder.addEventListener('click', function() {
 		modalNewFolder.style.display = "block";
 		downListBtn.style.display = "none";
 		overlay.style.display = "block";
+	}
+});
 
+btnFormNewFolder.addEventListener('click', function() {
+	if (inputName.value.length < 2) {
+		alert('Error');
+	} else {
 		folder 		= document.createElement('div'),
 		span    	= document.createElement('span'),
 		spanIcon 	= document.createElement('span');	
@@ -250,11 +272,15 @@ createFolder.addEventListener('click', function() {
 		file.appendChild(folder);
 		folder.appendChild(spanIcon);	 
 		folder.appendChild(span);
+
+		span.textContent = inputName.value;
+		
+		overlay.style.display = "none";
+		modalNewFolder.style.display = "none";
 	}
 });
 
-btnFormNewFolder.addEventListener('click', function() {
-	span.textContent = inputName.value;
+closeModalWindow.addEventListener('click', function() {
 	overlay.style.display = "none";
 	modalNewFolder.style.display = "none";
 });
