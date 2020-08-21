@@ -484,6 +484,20 @@
 		<div class="content-page">
 			<aside class="left-bar">
 				<button class="btn-create-file"><span class="fas fa-plus"></span> Создать</button>
+				<div class="down-list-btn">
+					<div class="create">
+						<button class="create-folder">Папку</button>
+					</div>					
+					<div class="upload">
+						<button class="upload-file-btn">Загрузить файл</button>
+						<button class="upload-folder-btn">Загрузить папку</button>
+					</div>
+					<div class="document">
+						<a href="">Google Докементы</a>
+						<a href="">Google Таблицы</a>
+						<a href="">Google Презентации</a>
+					</div>
+				</div>
 				<div class="side-bar-menu">
 					<a href=""><span class="fas fa-book"></span> Мой диск</a>
 					<a href=""><span class="fas fa-laptop"></span> Компьтеры</a>
@@ -505,12 +519,29 @@
 					<span class="fas fa-info"></span>
 					<span class="fas fa-list-ul"></span>
 				</div>
+				<div class="file">
+					<div class="folder">
+						<span class="fas fa-folder"></span>
+						<span class="title-folder">test</span>
+					</div>
+				</div>
+				<div class="modal-window-new-folder">
+					<div class="header-modal-window-new-folder">
+						<h2 class="title-header-modal-window-new-folder">Новая папка</h2>
+						<span class="fas fa-times"></span>
+					</div>
+					<form action="post">
+						<input type="text" class="input-name" value="Без названия">
+						<input type="button" class="btn-form-new-folder" value="Создать">
+					</form>
+				</div>
 			</div>
 			<aside class="right-bar">
 				<img src="img/calendary.png" alt="">
 				<img src="img/youtube.png" alt="">
 				<img src="img/gmail.png" alt="">
-				<button class="add-task-button fas fa-plus"></button>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/YZp3IuD_VB4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<button class="open-video-btn"><span class="fas fa-plus"></span></button>
 				<button class="close-open-right-bar-btn"><span class="fas fa-arrow-left"></span></button>
 			</aside>
 		</div>
